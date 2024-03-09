@@ -1,1 +1,58 @@
 /* Start coding here */
+html, body{
+    margin:0;
+    padding:0;
+}
+
+
+body {
+    height: 100vh;
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.flex-container {   /*nav  and  main*/
+    box-sizing: border-box;
+    height: 80vh; 
+    display: flex;
+    flex-direction: row;
+
+}
+
+.flex-item {
+    flex: 1; /* กำหนดให้ Flex items มีความกว้างหรือความสูงเต็มพื้นที่ของ Flex container */
+             /*case นี้ ตามความกว้าง เพราะ flex-direction: row; ด้านบน*/
+
+    margin: 2px;
+    background-color: rgb(255, 165, 0);
+    display: flex; 
+    flex-direction: row;  
+    justify-content: center;
+    align-items: center;
+    /* เพิ่มขอบและพื้นหลังสีเพื่อให้เห็นการกระจายพื้นที่ของ Flex items */
+}
+
+
+
+/* Set header, main, footer to fit the viewport height */
+header, footer {
+    box-sizing: border-box;    
+    height: 10vh; 
+
+    padding: 20px; 
+    border: 0px solid #ccc; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: rgb(0, 128, 128);
+}
+
+footer {
+    background-color: rgb(240, 230, 140);
+}
